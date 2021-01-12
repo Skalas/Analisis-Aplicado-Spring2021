@@ -30,7 +30,7 @@ El curso consiste principalmente en dos partes, una es teórica en la que explor
 
 ### ¿Cómo comunicarnos?
 
-Escribe a `miguel.escalante@itam.mx` y que el *subject* empiece con `[Análisis Aplicado 2020]`.
+Escribe a `miguel.escalante@itam.mx` y que el *subject* empiece con `[Análisis Aplicado 2020]`. Y la plataforma teams del ITAM. 
 
 ### Material del curso
 
