@@ -4,6 +4,7 @@ Hola alumnos
 
 
 ## Antes de empezar ... hola soy Maya
+## ¿CÓMO ESTAS?
 
 1. Instalar `git` 
    1. Si estás en una distro de  `GNU/Linux` tipo `Debian`: `sudo apt-get install git`.
