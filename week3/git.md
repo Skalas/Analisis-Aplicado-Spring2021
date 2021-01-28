@@ -30,10 +30,6 @@ pertenece a una diferente clase de controladores de versiones).
 
 ## Configurando tu git
 
-Abre tu `docker`, cambia al usuario `jovyan` y ve a tu carpeta
-`home`. Ahí, teclea lo siguiente, para establecer el usuario, correo
-(que usará `Github` para identificarte por ejemplo), si colorea la
-salida, y que editor por default para resolver conflictos.
 
 ```
 ➜  git config --global user.name "<Tu nombre>"
