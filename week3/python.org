@@ -143,11 +143,9 @@ Es posible ser explícito en la asignación del tipo de la variable
    :PROPERTIES:
    :CUSTOM_ID: operaciones
    :END:
-#+begin_src python :results output :session :exports both :results raw
-**Ejercicio:** 
-  
+
+*Ejercicio:*
 ¿Puedes identificar las operaciones?
-#+END_SRC
 
 #+begin_src python :results output :session :exports both :results raw
   x = 3
