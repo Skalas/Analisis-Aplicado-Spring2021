@@ -1,0 +1,549 @@
+* Introducción a python.
+  :PROPERTIES:
+  :CUSTOM_ID: introducción-a-python.
+  :END:
+** Ayuda
+   :PROPERTIES:
+   :CUSTOM_ID: ayuda
+   :END:
+#+BEGIN_SRC python
+  str?
+#+END_SRC
+
+** Variables
+   :PROPERTIES:
+   :CUSTOM_ID: variables
+   :END:
+*Asignación* le decimos a la computadora que la variable =x= tiene
+/asignado/ el valor =1=.
+
+#+begin_src python :results output :session :exports both
+  x = 1
+#+END_SRC
+
+#+RESULTS:
+
+#+begin_src python :results output :session :exports both
+  x
+#+END_SRC
+
+#+RESULTS:
+: 1
+
+#+begin_src python :results output :session :exports both
+  print(x)
+#+END_SRC
+
+#+RESULTS:
+: 1
+
+#+begin_src python :results output :session :exports both :results raw
+  a, b = 3, 4
+  print("El valor de a es ", a)
+  print("El valor de b es ", b)
+#+END_SRC
+
+#+RESULTS:
+El valor de a es  3
+El valor de b es  4
+
+Los *tipos* de variables "básicos" son los siguientes:
+
+*Enteros*
+
+#+begin_src python :results value :session
+x = 3
+x
+#+END_SRC
+
+#+RESULTS:
+: 3
+
+*Flotantes*
+
+#+begin_src python :results value :session
+  y = 3.5
+  y
+#+END_SRC
+
+#+RESULTS:
+: 3.5
+
+*Números Complejos* de la forma $a + b\iota$
+
+#+begin_src python :results value :session
+  z = 3 + 5j
+  z
+#+END_SRC
+
+*Booleanos*
+
+#+begin_src python :results value :session
+  a = True
+  a
+#+END_SRC
+
+Python también soporta *notación científica*
+
+#+begin_src python :results value :session
+  x = 1.2e34
+  x
+#+END_SRC
+
+#+begin_src python :results value :session
+  x = 1e-12 + 3.56e4j
+  x
+#+END_SRC
+
+Nota como cambiamos tres veces el tipo y el valor de la variable =x=, el
+hecho de /que se pueda/ hacer no implica *que debas de hacerlo*, se
+considera como una pésima práctica de programación...
+
+*Cadenas de texto*
+
+#+begin_src python :results value :session
+  cadena = u"Esto es una cadena de texto con acentos y otros símbolos UTF-8 ¿?¡!"
+  cadena
+#+END_SRC
+
+#+RESULTS:
+: Esto es una cadena de texto con acentos y otros símbolos UTF-8 ¿?¡!
+
+#+begin_src python :results output :session :exports both :results raw
+  print(cadena)
+#+END_SRC
+
+#+RESULTS:
+: Esto es una cadena de texto con acentos y otros símbolos UTF-8 ¿?¡!
+
+*Ejercicio* Usa la ayuda en línea de ipython e investiga como: -
+Capitalizarla. - Convertirla a minúsculas. - Convertir a mayúsculas. -
+Eliminar los espacios. de la cadena "Anita lava la tina". Aplica las
+cuatro operaciones una tras otra.
+
+Es posible ser explícito en la asignación del tipo de la variable
+
+#+begin_src python :results output :session :exports both :results raw
+  x = int(2)
+  y = float(3)
+  z = complex(1+2j)
+  a = str("Hola")
+#+END_SRC
+
+#+RESULTS:
+
+#+begin_src python :results output :session :exports both :results raw
+  print(x, y, z, a)
+#+END_SRC
+
+#+RESULTS:
+: 2 3.0 (1+2j) Hola
+
+** Operaciones
+   :PROPERTIES:
+   :CUSTOM_ID: operaciones
+   :END:
+
+*Ejercicio:*
+¿Puedes identificar las operaciones?
+
+#+begin_src python :results output :session :exports both :results raw
+  x = 3
+  y = 2
+#+END_SRC
+
+#+RESULTS:
+
+#+begin_src python :results output :session :exports both :results raw
+  x+y
+#+END_SRC
+
+#+RESULTS:
+: 5
+
+#+begin_src python :results output :session :exports both :results raw
+  x-y
+#+END_SRC
+
+#+RESULTS:
+: 1
+
+#+begin_src python :results output :session :exports both :results raw
+  x*y
+#+END_SRC
+
+#+RESULTS:
+: 6
+
+#+begin_src python :results output :session :exports both :results raw
+  x**y
+#+END_SRC
+
+#+RESULTS:
+: 9
+
+#+begin_src python :results output :session :exports both :results raw
+  x/y
+#+END_SRC
+
+#+RESULTS:
+: 1.5
+
+#+begin_src python :results output :session :exports both :results raw
+  y%x
+#+END_SRC
+
+#+RESULTS:
+: 2
+
+*Ejercicio:*
+
+Repite las operaciones pero ahora usa el siguiente valor (y tipo) de
+=y=.
+
+¿Qué sucede? ¿Cuál es el tipo del valor de salida?
+
+#+begin_src python :results output :session :exports both :results raw
+  y=4.1
+#+END_SRC
+
+*Ejercicio:*
+
+Repite las operaciones pero ahora usa el valor (y tipo) de =y=.
+
+¿Qué sucede? ¿Cuál es el tipo de valor de salida?
+
+#+begin_src python :results output :session :exports both :results raw
+  y = 4 + 3j
+#+END_SRC
+
+*Ejercicio:*
+
+¿Qué pasa en lo siguiente?
+
+#+begin_src python :results output :session :exports both :results raw
+  a = 3
+  b = "hola"
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a+b
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  str(a) + b
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  b+b
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a*b
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a, b, c = 1.0, 2.0, 3.0
+  print(a,b,c)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a + b/c
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  (a+b)/c
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x= 0
+  x += 1
+  print(x)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x -= 2
+  print(x)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x *= 3.14
+  print(x)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x /= 5*a
+  print(x)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  if x > 3.1:
+      print("Esto no se debería de imprimir")
+      print("Nota que es muy peligroso hacer esto con flotantes...")
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x = 5
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  if x > 3:
+      print("Esto SI se debería de imprimir")
+#+END_SRC
+
+Los siguientes operadores lógicos se pueden utilizar
+
+#+begin_src python :results output :session :exports both :results raw
+  x == 1
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x > 1
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x < 1
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x >= 1
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x != 1
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x > 10 or x <= 5
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  x > 10 and x <= 5
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  print(x)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  if x >= 5 and x < 10:
+      print("¡Hola!")
+  else:
+      print("Nunca me verás")
+#+END_SRC
+
+** Bucles
+   :PROPERTIES:
+   :CUSTOM_ID: bucles
+   :END:
+#+begin_src python :results output :session :exports both :results raw
+  for i in (1,2,3,4,5):
+      print(i)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  for x in "Hola Como estás?":
+      print(x)
+#+END_SRC
+
+El que sigue no es el mejor ejemplo de un uso de =while=, pero es con
+fines ilustrativos
+
+#+begin_src python :results output :session :exports both :results raw
+  i = 1
+  while i > 0 and i <= 5:
+      print(i)
+      i += 1
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  for i in range(3,10, 2):
+      print(i)
+#+END_SRC
+
+*Ejercicio:*
+
+Calcula el valor de la suma
+$\sum^{1000}_{k=1} \left(\frac{1}{k}\right)^2$.
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list = [1, 2, 3, 4, 5]
+  a_list
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  another_list = [1, 1.3, 4.5, 2+1j, [1,2]]
+  another_list
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list[3]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  another_list[3]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  another_list[4]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list[-1]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list[1:]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list[2:4]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list[:4]
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  n=5
+  a_list.append(n)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list.pop()
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list.append(3)
+  a_list[1] = 3
+  a_list.append(5)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list.remove?
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list.remove(3)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  a_list
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  for element in a_list:
+      print(element)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  for r in range(5):
+      print(r)
+#+END_SRC
+
+*** /List comprehensions/
+    :PROPERTIES:
+    :CUSTOM_ID: list-comprehensions
+    :END:
+En matemáticas, es normal describir las listas (siendo estrictos
+conjuntos) de la siguente manera:
+
+- $S = \{x^²\ |\  x\  en\  \{0 \ldots 9\}\}$
+- $V = (1, 2, 4, 8, \ldots, 2^{12})$
+- $M = \{x\  |\ x\  en\  S\  y\  x\  es\  impar\}$
+
+#+begin_src python :results output :session :exports both :results raw
+  S = [x**2 for x in range(10)]
+  V = [2**x for x in range(13)]
+  M = [x for x in S if x%2 == 0]
+  print(S)
+  print(V)
+  print(M)
+#+END_SRC
+
+Las /list comprehensions/ pueden ser utilizadas también con cadenas:
+
+#+begin_src python :results output :session :exports both :results raw
+  palabras = 'Anita lava la tina'.split()
+  print(palabras)
+  transformacion = [[w.upper(), w.lower(), len(w)] for w in palabras]
+  for t in transformacion:
+      print(t)
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  transformacion
+#+END_SRC
+
+Es posible usar varios =for= en una expresión, el siguiente bloque
+muestra los tripletes /pitagóricos/ (aquellos $a,b$ y $c$ que cumplen
+con $a^2 + b^2 = c^2$)
+
+#+begin_src python :results output :session :exports both :results raw
+  n = 25
+  [(x, y, z) for x in range(1, n) for y in range(x, n) for z in range(y, n) if x*x + y*y == z*z]
+#+END_SRC
+
+** Diccionarios
+   :PROPERTIES:
+   :CUSTOM_ID: diccionarios
+   :END:
+Los diccionarios o /mapas/ son otra estructura de datos importante en
+python
+
+#+begin_src python :results output :session :exports both :results raw
+  diccionario = {'a':1, 'b':2, 'coral': 'amarillo'}
+  diccionario
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  diccionario['a']
+#+END_SRC
+
+#+begin_src python :results output :session :exports both :results raw
+  diccionario['coral']
+#+END_SRC
+
+*Ejercicio* Usando la ayuda de python responde: - ¿Cómo puedo agregar
+elementos a un diccionario? - ¿Cómo puedo eliminar elementos a un
+diccionario? - ¿Cómo cambia el método =pop= respecto a la listas? -
+¿Cómo puedo iterar en un diccionario?
+
+** Funciones
+   :PROPERTIES:
+   :CUSTOM_ID: funciones
+   :END:
+*Principio DRY*: * Don't repeat yourself*
+
+#+begin_src python :results output :session :exports both :results raw
+  from math import sqrt, atan
+  def polar(x,y):
+      """
+      x, y son un par ordenado
+      """
+      r = sqrt(x**2 + y**2)
+      theta = atan(y/x)
+      return r, theta
+#+END_SRC
+
+#+RESULTS:
+
+
+#+begin_src python :results output :session :exports both :results raw
+  r, theta = polar(3,4)
+  print("La coordenada r es: " , r)
+  print("El ángulo theta es: ", theta)
+#+END_SRC
+
+#+RESULTS:
+: La coordenada r es:  5.0
+: El ángulo theta es:  0.9272952180016122
+
