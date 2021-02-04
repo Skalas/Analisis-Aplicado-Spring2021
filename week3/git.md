@@ -205,7 +205,7 @@ por comodidad, podemos usar **Github** de tal manera.
 El repositorio de la clase está en:
 
 ```
-https://github.com/Skalas/Analisis-Aplicado-Spring20201
+https://github.com/Skalas/Analisis-Aplicado-Spring2021
 ```
 
 Lo primero que hay que hacer es **forkear** este repositorio. La
@@ -214,10 +214,10 @@ de github. Para obtener una copia de trabajo en su computadora deberán
 de **clonar** su repositorio:
 
 ```
-➜ git clone https://github.com/<usuario_git_hub>/Analisis-Aplicado-Spring20201.git
+➜ git clone https://github.com/<usuario_git_hub>/Analisis-Aplicado-Spring2021.git
 ```
 
-Esto creará una carpeta `Analisis-Aplicado-Spring20201` en su `$HOME`.
+Esto creará una carpeta `Analisis-Aplicado-Spring2021` en su `$HOME`.
 
 Ve a la carpeta `alumnos` y crea una carpeta cuyo nombre sea tu nombre
 de usuario en github. En esta carpeta realizarás las tareas,
@@ -245,7 +245,7 @@ tu carpeta). Llamalo `prueba2.txt` y agrega algo de texto. Para
 guardar los cambios aprieta el botón `Commit new file`.
 
 En tu computadora, en `docker` en la carpeta
-`Analisis-Aplicado-Spring20201`, para obtener los últimos cambios utiliza:
+`Analisis-Aplicado-Spring2021`, para obtener los últimos cambios utiliza:
 
 ```
 ➜ git pull origin master
@@ -253,35 +253,35 @@ En tu computadora, en `docker` en la carpeta
 
 En tu carpeta debería de aparecer el archivo `prueba.txt`. Ahora
 quedan por contestar dos preguntas: (1) ¿Cómo actualizo el repositorio
-`Skalas/Analisis-Aplicado-Spring20201` (para entregar tarea por ejemplo?
+`Skalas/Analisis-Aplicado-Spring2021` (para entregar tarea por ejemplo?
 y (2) ¿Cómo actualizo mi repositorio con los cambios del repositorio
-de `Skalas/Analisis-Aplicado-Spring20201`?
+de `Skalas/Analisis-Aplicado-Spring2021`?
 
 Para ambas preguntas es necesario aclarar el concepto de los `remote`:
 Si ejecutas
 
 ```
 ➜ git remote -v
-origin  https://github.com/<usuario>/Analisis-Aplicado-Spring20201.git (fetch)
-origin  https://github.com/<usuario>/Analisis-Aplicado-Spring20201.git (push)
+origin  https://github.com/<usuario>/Analisis-Aplicado-Spring2021.git (fetch)
+origin  https://github.com/<usuario>/Analisis-Aplicado-Spring2021.git (push)
 ```
 
 Vamos a agregar como `remote` el repositorio
-`Skalas/Analisis-Aplicado-Spring20201`:
+`Skalas/Analisis-Aplicado-Spring2021`:
 
 ```
 ➜ git remote add repo-clase
-https://github.com/Skalas/Analisis-Aplicado-Spring20201.git
+https://github.com/Skalas/Analisis-Aplicado-Spring2021.git
 ```
 
 Ejecuta de nuevo `git remote -v`
 
 ```
 ➜ git remote -v
-origin	git@github.com:Skalas/Analisis-Aplicado-Spring20201.git (fetch)
-origin	git@github.com:Skalas/Analisis-Aplicado-Spring20201.git (push)
-repo-clase	https://github.com/Skalas/Analisis-Aplicado-Spring20201.git (fetch)
-repo-clase	https://github.com/Skalas/Analisis-Aplicado-Spring20201.git (push)
+origin	git@github.com:Skalas/Analisis-Aplicado-Spring2021.git (fetch)
+origin	git@github.com:Skalas/Analisis-Aplicado-Spring2021.git (push)
+repo-clase	https://github.com/Skalas/Analisis-Aplicado-Spring2021.git (fetch)
+repo-clase	https://github.com/Skalas/Analisis-Aplicado-Spring2021.git (push)
 ```
 
 Entonces, la respuesta a la primera pregunta es una técnica llamada `pull-request` que en
@@ -315,7 +315,7 @@ Te sientas en la compu, abres `docker`.
 y:
 
 ```
-➜ cd Analisis-Aplicado-Spring20201
+➜ cd Analisis-Aplicado-Spring2021
 ➜ git pull origin master
 ```
 
@@ -353,7 +353,7 @@ nothing to commit, working directory clean
 
 
 Cuando quieran enviar la tarea realizan el `pull-request`. Y habrán
-terminado si en el repositorio `Skalas/Analisis-Aplicado-Spring20201`
+terminado si en el repositorio `Skalas/Analisis-Aplicado-Spring2021`
 están sus cambios.
 
 ¡Has terminado! Ahora puedes irte a descansar y disfrutar del sol...
