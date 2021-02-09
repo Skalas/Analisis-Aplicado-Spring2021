@@ -1,6 +1,0 @@
-Nombre: Santiago Alvarez Trillas
-Clave Unica: 171886
-email: santialtri@hotmail.com
-nombre en github: santialtri
-
-
