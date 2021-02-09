@@ -1,4 +1,4 @@
-#Santiago Alvarez Trilas
+# Santiago Alvarez Trillas
 
 clave única: 171886
 nombre preferido: Santiago
