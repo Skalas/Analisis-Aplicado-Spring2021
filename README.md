@@ -3,8 +3,7 @@ Repositorio para la clase de Análisis Aplicado.
 Hola alumnos 
 
 
-## Antes de empezar ... hola soy Maya
-## ¿CÓMO ESTAS?
+## Antes de empezar
 
 1. Instalar `git` 
    1. Si estás en una distro de  `GNU/Linux` tipo `Debian`: `sudo apt-get install git`.
