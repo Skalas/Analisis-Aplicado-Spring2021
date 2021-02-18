@@ -1,3 +1,4 @@
+import numpy as np
 def gradiente(f, x0, h=0.0001):
     n = len(x0)
     Grad=np.zeros(n)
