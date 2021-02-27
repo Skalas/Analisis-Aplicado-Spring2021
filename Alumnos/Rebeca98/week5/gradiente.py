@@ -1,6 +1,6 @@
 import numpy as np
 
-def gradiente(f, x0, h=1e-6, i=-1):
+def Grad(f, x0, h=1e-6, i=-1):
     """
     Función que calcula el Grad de una función en un punto
     """
@@ -37,8 +37,8 @@ def Hess(f, x0, h=1e-4, method = "basic"):
             if method == "basic":
                 Hess[i,j] = ( f(x0 + z_j +z_i) - f(x0 + z_i ) - f(x0+z_j) +f(x0)) / (h**2)
             elif method == "grad":
-                Hess[i,j] = (gradiente(f,x0+z_j,h,i) - gradiente(f,x0,h,i) + \
-                             gradiente(f,x0+z_i,h,j) - gradiente(f,x0,h,j))/(2*h)
+                Hess[i,j] = (Grad(f,x0+z_j,h,i) - Grad(f,x0,h,i) + \
+                             Grad(f,x0+z_i,h,j) - Grad(f,x0,h,j))/(2*h)
             elif method == "centered":
                 if i==j:
                     Hess[i,j] = (-f(x0+2*z_i) + 16*f(x0+z_i) - 30*f(x0)+\
@@ -47,21 +47,21 @@ def Hess(f, x0, h=1e-4, method = "basic"):
                     Hess[i,j] = (f(x0+z_i+z_j) - f(x0 + z_i - z_j) - \
                                  f(x0 - z_i + z_j) + f(x0-z_i-z_j))/(4*h**2)
             elif method == "gradCentered":
-                    Hess[i,j] = (gradiente(f,x0+z_j,h)[i] - gradiente(f, x0-z_j,h)[i] + \
-                                 gradiente(f,x0+z_i,h)[j] - gradiente(f,x0-z_i,h)[j])/(4*h)
+                    Hess[i,j] = (Grad(f,x0+z_j,h)[i] - Grad(f, x0-z_j,h)[i] + \
+                                 Grad(f,x0+z_i,h)[j] - Grad(f,x0-z_i,h)[j])/(4*h)
     return Hess
 
 
 def cuadrados(x):
     resultado=0
     for i in range(len(x)):
-        resultado += x[i]**2
+        resultado += x[i]**4
     return resultado
 
 
-x0 = [0,0,0,0]
-x1 = [1,1,1,1]
-print("Gradiente:\n", gradiente(cuadrados,x1, h=0.0000001))
-print("\nMatriz de Hess\n",Hess(cuadrados, x1, method="grad", h=1e-5 ))
- 
+
+print(Grad(cuadrados,[1,1,1,1],h=0.0000001))
+
+print(Hess(cuadrados,[1,1,1,1], method="grad", h=1e-5 )) 
+
     
