@@ -60,8 +60,8 @@ def cuadrados(x):
 
 
 
-print(Grad(cuadrados,[1,1,1,1],h=0.0000001))
+print(Grad(cuadrados, [0,0,0,0], h=0.0000001))
 
-print(Hess(cuadrados,[1,1,1,1], method="grad", h=1e-5 )) 
-
+print(Hess(cuadrados, [0,0,0,0], method="grad", h=1e-5 ))
+ 
     

@@ -6,10 +6,14 @@ def f_o_c(f,x, tol=1e-12):
     Función que calcula las condiciones de primer orden
     """
     grad = np.array(gradiente(f,x))
-    print(grad)
     if np.dot(grad, grad) < tol:
         return True
     else :
         return False
+
+def s_o_c(f,x,tol=1e-5):
+    """
+    Inserten aqui código para condiciones de segundo orden 
+    """
     
-print(condiciones_primer_orden(cuadrados, [0,0,0,0]))
+print(f_o_c(cuadrados, [0,0,0,0,0,0,0,0]))
