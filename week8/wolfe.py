@@ -1,7 +1,5 @@
 import numpy as np 
-from derivadas import cuadrados
-
-from derivadas import Grad,Hess
+from derivadas import Grad, Hess, cuadrados
 
 def condiciones_wolfe(f, x0, alpha, pk, c1=1e-4, c2 = 1e-2, tol=1e-5):
     """
