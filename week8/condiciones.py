@@ -1,5 +1,6 @@
-from derivadas import Grad, cuadrados, Hess
 import numpy as np
+from derivadas import Grad, cuadrados, Hess
+
 
 def f_o_c(f,x, tol=1e-12):
     """
