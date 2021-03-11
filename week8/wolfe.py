@@ -1,6 +1,7 @@
 import numpy as np 
 from derivadas import Grad, Hess, cuadrados
 
+
 def condiciones_wolfe(f, x0, alpha, pk, c1=1e-4, c2 = 1e-2, tol=1e-5):
     """
     Función que evalúa las condiciones de wolfe para una alpha. 
@@ -31,6 +32,7 @@ def genera_alpha(f, x0, pk, c1=1e-4, tol=1e-5):
 def is_pos_def(Hessiana):
     """ A Rellenar """
     return True
+
 
 def modificacion_hessiana(Hessiana, l = 0.5):
     while not is_pos_def(Hessiana):
