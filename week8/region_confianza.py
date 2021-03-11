@@ -4,14 +4,15 @@ from derivadas import Grad, Hess, cuadrados
 
 def mk(xk):
     """pintar curvas de nivel de mk """
+    return ""
 
 
-def punto_cauchy(f, xk, deltak, gk='', Bk=''):
+def punto_cauchy(f, xk, deltak, gk='', Bk=''):  
     tauk = 1
     if gk == '':
-        gk = Grad(f,xk)
+        gk = Grad(f, xk)
     if Bk == '':
-        Bk = Hess(f,xk)
+        Bk = Hess(f, xk)
     cuadratica = np.dot(np.dot(gk,Bk), gk)
     if  cuadratica > 0:
         mintau = np.dot(gk,gk)**(3/2)/(deltak*cuadratica) 
