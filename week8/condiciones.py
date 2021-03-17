@@ -12,6 +12,7 @@ def f_o_c(f,x, tol=1e-12):
     else :
         return False
 
+
 def s_o_c(f, x0, tol=1e-15):
     """
     Inserten aqui código para condiciones de segundo orden 
@@ -33,6 +34,7 @@ def is_min(f, x0, tol=1e-25) :
         return True
     else :
         return False
+
 
 if __name__ == '__main__':
     print(is_min(cuadrados, [0,1,1,0]))

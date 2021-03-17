@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def Grad(f, x0, h=1e-6, i=-1):
     """
     Función que calcula el Grad de una función en un punto
