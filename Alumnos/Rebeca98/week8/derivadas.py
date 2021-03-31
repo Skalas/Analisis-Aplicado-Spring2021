@@ -63,5 +63,3 @@ def cuadrados(x):
 if __name__ == '__main__':
     print(Grad(cuadrados, [0,0,0,0], h=0.0000001))
     print(Hess(cuadrados, [0,0,0,0], method="grad", h=1e-5 ))
- 
-    

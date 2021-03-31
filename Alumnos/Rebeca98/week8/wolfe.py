@@ -43,5 +43,3 @@ def modificacion_hessiana(Hessiana, l = 0.5):
 if __name__ == '__main__':
     alpha = genera_alpha(cuadrados, np.array([1,1,1,1]), np.array([-1,1,-1,-1]))
     print(condiciones_wolfe(cuadrados, np.array([1,1,1,1]), alpha, np.array([-1,1,-1,-1])))
-    
-

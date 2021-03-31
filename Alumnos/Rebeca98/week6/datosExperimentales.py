@@ -1,5 +1,5 @@
 import numpy as np
-from gradiente import cuadrados
+from derivadas import cuadrados
 
 def condiciones_wolfe(f,x0,alpha,pk,tol = 1e-5):
     phi = lambda aplha : f(x0 + aplha*pk)
