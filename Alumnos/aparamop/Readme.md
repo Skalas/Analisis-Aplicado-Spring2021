@@ -1,4 +1,4 @@
-# Miguel Angel Escalante Serrato
-* Clave única: 108683
-* Nombre preferido: Miguel
-* Correo electrónico: miguel.escalante@itam.mx
+# Antonio Paramo Pitol
+* Clave única: 171786
+* Nombre preferido: Antonio
+* Correo electrónico: aparamop@itam.mx
