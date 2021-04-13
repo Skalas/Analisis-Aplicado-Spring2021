@@ -1,3 +1,4 @@
-David Isaac López Romero
-CU: 173993
-email: davisaacl@gmail.com
+# David Isaac López Romero
+* Clave única: 173993
+* Nombre preferido: David
+* Correo electrónico: davisaacl@gmail.com
