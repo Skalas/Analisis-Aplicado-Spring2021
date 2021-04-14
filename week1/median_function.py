@@ -1,9 +1,12 @@
 
-x = [{"x": 1, "y": 8}, {"x": 2, "y": 2}, {"x": 3, "y": 3}]
+x = [{"x": 2, "y": 3}, {"x": 5, "y": 8}, {"x": 1, "y": 3}]
 y = {"x": 200, "y": 3}
 
 
 def cost_function_median(x, y):
+    """
+    función ejemplo
+    """
     suma = 0
     for i in x:
         print(i["x"], i["y"])
