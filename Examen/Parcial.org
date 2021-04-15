@@ -3,6 +3,11 @@
 #+OPTIONS: author:nil 
 #+LANGUAGE: es
 
+Dentro de su carpeta personal ~Alumnos/<nombre de usuario>~, generar una nueva carpeta con el nombre de ~Examen~. 
+- Dentro de esta carpeta introducir su código para la parte práctica y un documento que tenga las respuestas a la parte teórica.
+- La duración del examen es de 90 minutos.
+- Y el método de entrega es un Pull Request al repositorio del curso.
+
 * Teoría
 ** ELI5 (20 puntos)
  Explícame como si tuviera 5 años. Es un subreddit muy popular donde se explican conceptos muy interesantes de maneras muy sencillas. Richard Feynman tenía una metodologia de aprendizaje que involucra explicar conceptos complejos a un niño. Por ende para esta parte del examen tenemos lo siguiente:
