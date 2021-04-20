@@ -9,14 +9,16 @@
 Que los alumnos se familiaricen y lleven a la práctica los aprendizajes obtenidos durante el curso de Análisis Aplicado. 
 
 * Proyecto
-Investigar una aplicación donde las metodologías implementadas en el curso tengan cabida y hayan ayudado a resolver algún problema más grande dentro de la optimización o la vida real. Cuando tengan una idea de lo que van a presentar, discutirlo conmigo el día *26-abr*. 
+Investigar una aplicación donde las metodologías implementadas en el curso tengan cabida y hayan ayudado a resolver algún problema más grande dentro de la optimización o la vida real. Deben subir su propuesta dentro al archivo:  ~Proyecto/<nombre del equipo>/Propuesta.<md|org>~ para el día *2021-04-26* antes de la clase, para poderlas discutir. 
 
 Además de investigar el tema y dar una explicación del tema, tienen que condensar un problema de optimización que sus algoritmos implementados en el semestre, puedan resolver. 
 
-Hacer una presentación en formato libre de todo lo investigado y aprendizajes encontrados con las metodologías. 
-
+Hacer una presentación en formato libre de todo lo investigado y aprendizajes encontrados con las metodologías. Se hará día de presentaciones el día May-12.
+* Organización proyecto
+Ojo que dentro de la carpeta  ~Proyecto/<nombre del equipo>/~ deberán subir todo el código que hayan adaptado, implementado o reescrito para mostrar todo el trabajo hecho por el equipo. Para que quede registrado, deberá ser entregado también via /pull request/. 
 * Formato
-Se hará una presentación a final del semestre al estilo poster de conferencia, (no es necesario que impriman nada, sólo que presenten planteamiento, relación con la temática del curso y resultados con los algoritmos implementados)
+Se hará una presentación a final del semestre al estilo poster de conferencia, (no es necesario que impriman nada, sólo que presenten planteamiento, relación con la temática del curso y resultados con los algoritmos implementados).
+
 * Fechas Importantes
 - Fecha límite entrega de propuestas: *2021-04-26*
 - Fecha de /Show and Tell/ : *2021-05-12*
