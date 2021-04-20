@@ -1,0 +1,21 @@
+#+OPTIONS: toc:nil 
+#+TITLE: Examen parcial
+#+OPTIONS: author:nil 
+#+LANGUAGE: es
+
+
+* Objetivo General del Proyecto 
+
+
+* Equipos
+Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
+
+|--------+-----------------+-------------------------|
+| Equipo | Temática        | Integrantes             |
+|--------+-----------------+-------------------------|
+|      1 | Elemento Finito | Integrante 1, 000110022 |
+|        |                 | Integrante 2, 000110022 |
+|--------+-----------------+-------------------------|
+|      2 | Nuevo Tema      | Integrante 1, 000110022 |
+|        |                 | Integrante 2, 000110022 |
+|--------+-----------------+-------------------------|
