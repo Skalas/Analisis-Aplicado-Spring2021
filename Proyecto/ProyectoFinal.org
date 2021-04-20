@@ -18,8 +18,8 @@ Hacer una presentación en formato libre de todo lo investigado y aprendizajes e
 * Formato
 Se hará una presentación a final del semestre al estilo poster de conferencia, (no es necesario que impriman nada, sólo que presenten planteamiento, relación con la temática del curso y resultados con los algoritmos implementados)
 * Fechas Importantes
-- Fecha límite entrega de propuestas: 2021-04-26
-- Fecha de /Show and Tell/ : 2021-05-12 
+- Fecha límite entrega de propuestas: *2021-04-26*
+- Fecha de /Show and Tell/ : *2021-05-12*
 * Equipos
 Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
 
