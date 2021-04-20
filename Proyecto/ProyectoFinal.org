@@ -28,9 +28,9 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |--------+-----------------+-------------------------|
 | Equipo | Temática        | Integrantes             |
 |--------+-----------------+-------------------------|
-|      1 | Optimizando el desempeño | Alonso Martinez, 172255 |
-|        | académico                | Julieta Rivero, 170454 |
-|        |                          | Rebeca Angulo, 175311 |
+|      1 | Optimizando el desempeño académico | Alonso Martinez, 172255 |
+|        |                 | Julieta Rivero, 170454 |
+|        |                 | Rebeca Angulo, 175311  |
 |--------+-----------------+-------------------------|
 |      2 | Nuevo Tema      | Integrante 1, 000110022 |
 |        |                 | Integrante 2, 000110022 |
