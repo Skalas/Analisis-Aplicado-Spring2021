@@ -1,12 +1,25 @@
 #+OPTIONS: toc:nil 
-#+TITLE: Examen parcial
+#+TITLE: Proyecto Final
 #+OPTIONS: author:nil 
 #+LANGUAGE: es
 
 
 * Objetivo General del Proyecto 
 
+Que los alumnos se familiaricen y lleven a la práctica los aprendizajes obtenidos durante el curso de Análisis Aplicado. 
 
+* Proyecto
+Investigar una aplicación donde las metodologías implementadas en el curso tengan cabida y hayan ayudado a resolver algún problema más grande dentro de la optimización o la vida real. Cuando tengan una idea de lo que van a presentar, discutirlo conmigo el día *26-abr*. 
+
+Además de investigar el tema y dar una explicación del tema, tienen que condensar un problema de optimización que sus algoritmos implementados en el semestre, puedan resolver. 
+
+Hacer una presentación en formato libre de todo lo investigado y aprendizajes encontrados con las metodologías. 
+
+* Formato
+Se hará una presentación a final del semestre al estilo poster de conferencia, (no es necesario que impriman nada, sólo que presenten planteamiento, relación con la temática del curso y resultados con los algoritmos implementados)
+* Fechas Importantes
+- Fecha límite entrega de propuestas: 2021-04-26
+- Fecha de /Show and Tell/ : 2021-05-12 
 * Equipos
 Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
 
