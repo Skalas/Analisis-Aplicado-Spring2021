@@ -11,12 +11,17 @@ def gradiente_conjugado(x0, A, b):
     b = np.matrix(b).T
     rk = np.dot(A,x0) - b
     pk = -rk
-    while not (np.dot(rk.T,rk) ==  0):
-        alpha_k = np.dot(-rk.T,pk)/np.dot(pk.T,np.dot(A,pk))
-        xk_1 = xk + alpha_k[0,0]*pk
-        
-        rk=np.zeros(1)
-    return rk
+    while not (rk.T*rk ==  0):
+        alphak = rk.T*rk/(pk.T*A*pk)
+        alphak= alphak[0,0]
+        xk_1 = xk + alphak*pk
+        rk_1 =  rk + alphak*A*pk
+        betak_1 = (rk_1.T*rk_1)/(rk.T*rk)
+        betak_1 = betak_1[0,0]
+        pk_1 = -rk_1 + betak_1*pk
+        xk, rk, pk = xk_1, rk_1, pk_1
+    return xk
+
 
 if __name__ == '__main__':
     n=15
