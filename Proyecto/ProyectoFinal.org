@@ -25,13 +25,13 @@ Se hará una presentación a final del semestre al estilo poster de conferencia,
 * Equipos
 Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
 
-|--------+-----------------+-------------------------|
-| Equipo | Temática        | Integrantes             |
-|--------+-----------------+-------------------------|
+|--------+------------------------------------+-------------------------|
+| Equipo | Temática                           | Integrantes             |
+|--------+------------------------------------+-------------------------|
 |      1 | Optimizando el desempeño académico | Alonso Martinez, 172255 |
-|        |                 | Julieta Rivero, 170454 |
-|        |                 | Rebeca Angulo, 175311  |
-|--------+-----------------+-------------------------|
-|      2 | Nuevo Tema      | Integrante 1, 000110022 |
-|        |                 | Integrante 2, 000110022 |
-|--------+-----------------+-------------------------|
+|        |                                    | Julieta Rivero, 170454  |
+|        |                                    | Rebeca Angulo, 175311   |
+|--------+------------------------------------+-------------------------|
+|      2 | Nuevo Tema                         | Integrante 1, 000110022 |
+|        |                                    | Integrante 2, 000110022 |
+|--------+------------------------------------+-------------------------|
