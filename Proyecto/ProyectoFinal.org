@@ -35,9 +35,9 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |      2 | Nuevo Tema                         | Integrante 1, 000110022 |
 |        |                                    | Integrante 2, 000110022 |
 |--------+------------------------------------+-------------------------|
-|      3 | Otro Nuevo Tema                    | Integrante 1, 000110022 |
-|        |                                    | Integrante 2, 000110022 |
-|        |                                    | Integrante 3, 000110022 |
-|        |                                    | Integrante 4, 000110022 |
-|        |                                    | Integrante 5, 000110022 |
+|      3 | Optimización en economía           | Maya Denti, 181158      |
+|        |                                    | Jose Alfredi Issa,173144|
+|        |                                    | Santiago Alavarez,171886|
+|        |                                    | Daniela Bugeda, 174308  |
+|        |                                    | David López,            |
 |--------+------------------------------------+-------------------------|
