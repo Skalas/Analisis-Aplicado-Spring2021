@@ -1,9 +1,8 @@
 
 * Calificaciones primer parcial 
-
+#+name: calificaciones
 |--------+------+------+--------+----------+-------|
 |   C.U. | ELI5 | Demo | Codigo |    Extra | Final |
-|        | (20) | (20) |   (60) | (10 o 0) |       |
 |--------+------+------+--------+----------+-------|
 | 131008 |   20 |   15 |     55 |       10 |   100 |
 | 151135 |   20 |   15 |      0 |        0 |    35 |
@@ -34,4 +33,57 @@
 | 176357 |   10 |   10 |     20 |          |    40 |
 | 181158 |   20 |   15 |     60 |       10 |   100 |
 #+TBLFM: $6=vmin(vsum($2..$5), 100)
-*
+
+#+name: calificaciones-csv
+#+BEGIN_SRC elisp :var x=calificaciones :wrap example :file export.csv :results file
+(orgtbl-to-csv x nil)
+#+END_SRC
+
+#+RESULTS: calificaciones-csv
+#+begin_example
+[[file:export.csv]]
+#+end_example
+#+begin_src R :session var
+library(tidyverse)
+
+data  <- read_csv('export.csv')
+
+data %>%
+    summarise(
+        media = mean(Final),
+        sd = sd(Final)
+    )
+
+#+end_src
+
+#+RESULTS:
+| 73.75 | 25.2625106520402 |
+
+#+begin_src R  :session
+data %>%
+    select(Final) %>%
+    ggplot(aes(Final))+
+    geom_histogram(bins=15)
+#+end_src
+
+#+RESULTS:
+
+#+begin_src R  :session
+data %>%
+    select(P2) %>%
+    ggplot(aes(P2))+
+    geom_histogram(bins=10)
+
+#+end_src
+
+#+RESULTS:
+
+#+begin_src R  :session
+data %>%
+    select(P3) %>%
+    ggplot(aes(P3))+
+    geom_histogram(bins=10)
+
+#+end_src
+
+#+RESULTS:
