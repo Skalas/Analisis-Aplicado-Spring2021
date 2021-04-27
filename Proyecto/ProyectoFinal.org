@@ -31,6 +31,7 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |      1 | Optimizando el desempeño académico | Alonso Martinez, 172255 |
 |        |                                    | Julieta Rivero, 170454  |
 |        |                                    | Rebeca Angulo, 175311   |
+|        |                                    | Jose Pablo Sánchez, 174139|
 |--------+------------------------------------+-------------------------|
 |      2 | Nuevo Tema                         | Integrante 1, 000110022 |
 |        |                                    | Integrante 2, 000110022 |
