@@ -32,8 +32,10 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |        |                                    | Julieta Rivero, 170454  |
 |        |                                    | Rebeca Angulo, 175311   |
 |--------+------------------------------------+-------------------------|
-|      2 | Nuevo Tema                         | Integrante 1, 000110022 |
-|        |                                    | Integrante 2, 000110022 |
+|      2 | Finite Element Method              | Carolina Elorza, 166780 |
+|        |                                    | Jesus Solorzano, 163029 |
+|        |                                    | Ana C. Sandoval, 152808 |
+|        |                                    | Mario E. Sosa L, 151767 |
 |--------+------------------------------------+-------------------------|
 |      3 | Otro Nuevo Tema                    | Integrante 1, 000110022 |
 |        |                                    | Integrante 2, 000110022 |
