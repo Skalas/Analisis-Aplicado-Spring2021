@@ -25,18 +25,26 @@ Se hará una presentación a final del semestre al estilo poster de conferencia,
 * Equipos
 Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
 
-|--------+------------------------------------+-------------------------|
-| Equipo | Temática                           | Integrantes             |
-|--------+------------------------------------+-------------------------|
-|      1 | Optimizando el desempeño académico | Alonso Martinez, 172255 |
-|        |                                    | Julieta Rivero, 170454  |
-|        |                                    | Rebeca Angulo, 175311   |
-|--------+------------------------------------+-------------------------|
-|      2 | Nuevo Tema                         | Integrante 1, 000110022 |
-|        |                                    | Integrante 2, 000110022 |
-|--------+------------------------------------+-------------------------|
-|      3 | Otro Nuevo Tema                    | Integrante 1, 000110022 |
-|        |                                    | Integrante 2, 000110022 |
+|--------+------------------------------------+----------------------------------|
+| Equipo | Temática                           | Integrantes                      |
+|--------+------------------------------------+----------------------------------|
+|      1 | Optimizando el desempeño académico | Alonso Martinez, 172255          |
+|        |                                    | Julieta Rivero, 170454           |
+|        |                                    | Rebeca Angulo, 175311            |
+|--------+------------------------------------+----------------------------------|
+|      2 | Ubicación de policías/alumbrado    | María de la Luz Vizcaíno, 157045 |
+|        | público en la CDMX                 | Sebastián Martínez, 176357       |
+|        |                                    | Álvaro Acedo, 174052             |                 
+|        |                                    | Carlos Iván León Coras, 131008   |
+|        |                                    | Jose Hurtado, 164181             |
+|--------+------------------------------------+----------------------------------|
+|      3 | Otro Nuevo Tema                    | Integrante 1, 000110022          |
+|        |                                    | Integrante 2, 000110022          |
+|        |                                    | Integrante 3, 000110022          |
+|        |                                    | Integrante 4, 000110022          |
+|        |                                    | Integrante 5, 000110022          |
+|--------+------------------------------------+----------------------------------|  
+|                                             | Integrante 2, 000110022 |
 |        |                                    | Integrante 3, 000110022 |
 |        |                                    | Integrante 4, 000110022 |
 |        |                                    | Integrante 5, 000110022 |
