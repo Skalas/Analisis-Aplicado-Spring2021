@@ -1,5 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import time
+
+start_time = time.time()
 
 num_casas = 100
 num_camiones = 5
@@ -18,10 +21,10 @@ c_y = np.random.uniform(low = min_long, high = max_long, size = num_camiones) # 
 coordenadas_casas = np.zeros(2*num_casas)
 coordenadas_camiones = np.zeros(2*num_camiones)
 
-#aplana los datos
+# Aplana los datos
 for i in range(num_casas):
     coordenadas_casas[i] = ca_x[i]
-    coordenadas_casas[i+ num_casas] = ca_y[i]
+    coordenadas_casas[i + num_casas] = ca_y[i]
 for i in range(num_camiones):
     coordenadas_camiones[i] = c_x[i]
     coordenadas_camiones[i + num_camiones] = c_y[i]
@@ -39,7 +42,6 @@ def encuentra_minimos():
     return minim
 minimos = encuentra_minimos()
 print(minimos)
-print(type(minimos))
 
 
 
@@ -58,22 +60,22 @@ def gradiente(f, x, h = .0001):
     for i in range(n):
         z = np.zeros(n)
         z[i] = h/2
-        grad[i] = (f(x+z) - f(x-z))/h
+        grad[i] = (f(x + z) - f(x - z))/h
     return grad
 
 def hessiana(f, x, h = .0001):
     n = len(x)
-    hess = np.zeros((n,n))
+    hess = np.zeros((n, n))
     for i in range(n):
         w = np.zeros(n)
         w[i] = h
         for j in range(n):
             if i==j:
-                hess[i][j] = (-f(x+2*w) +16*f(x+w) - 30*f(x) + 16*f(x-w) -f(x-2*w))/(12*h**2)
+                hess[i][j] = (- f(x + 2 * w) + 16 * f(x + w) - 30 * f(x) + 16 * f(x - w) -f(x - 2 * w))/(12 * h**2)
             else:
                 z = np.zeros(n)
                 z[j] = h
-                hess[i][j] = (f(x + w + z) - f(x - w + z) - f(x - z + w) + f(x - z - w))/(4*h**2)
+                hess[i][j] = (f(x + w + z) - f(x - w + z) - f(x - z + w) + f(x - z - w))/(4 * h**2)
     return hess
 
 def condicionesnecesarias(f, x, h = .0001):
@@ -94,44 +96,76 @@ def condicionesnecesarias(f, x, h = .0001):
     return resp        
 ####### direcciones de descenso ########
 def steepest(f, x):
-    return -gradiente(f,x)
+    return - gradiente(f, x)
 def newt(f, x, h=.0001):
-    return -np.matmul(np.linalg.inv(hessiana(f,x, h)),gradiente(f,x,h))
-    #return -np.linalg.solve(hessiana(f, x, h), gradiente(f, x, h))
+    return - np.matmul(np.linalg.inv(hessiana(f, x, h)),gradiente(f, x, h))
 
-def condicionesWolfe(f, x, p, a, c1=.5, c2=.9):
+def condicionesWolfe(f, x, p, a, c1 = .5, c2 = .9):
     resp = True
-    if f(x + a*p) > f(x) + c1*a*np.dot(gradiente(f, x), p):
+    if f(x + a * p) > f(x) + c1 * a * np.dot(gradiente(f, x), p):
         print(1)
         resp=False
-    if np.dot(gradiente(f, x + a*p), p) < c2*np.dot(gradiente(f, x), p):
+    if np.dot(gradiente(f, x + a*p), p) < c2 * np.dot(gradiente(f, x), p):
         print(2)
         resp=False
     return resp
 
+    # Encuentro la alpha que va a cumplir las condiciones de Wolfe
+def genera_alpha(f, x, p, c1 = 1e-4, tol = 1e-5):
+
+    a, rho, c = 1, 4/5, c1
+    while f(x + a * p)>f(x) + c1 * a * np.dot(gradiente(f, x), p):
+        a*=rho
+    return a
+
 def encuentraMinimo(f,x, phi = .85, h =.0001):
     while not condicionesnecesarias(f, x, h):
         a = 1
-        #p = steepest(f, x)
         p = newt(f, x, h)
-        print(x)
 
         while not condicionesWolfe(f, x, p, a):
-            a = phi*a
-            print("no cumple wolfe")
-        x = x + a*p
+            a = phi * a
+        x = x + a * p
     return x
 
+
+# Implementamos el método de máximo descenso para encontrar la mejor red de distribución de camiones
+def max_des(f, x0, h = .0001):
+
+    xk = x0
+
+    while not condicionesnecesarias(f, xk, h):
+        grad = gradiente(f, xk)
+        pk = - grad
+        alpha = genera_alpha(f, xk, pk)
+        xk = xk + alpha * pk
+    
+    return xk
+
+
 print(coordenadas_camiones)
+coor_final_2 = max_des(distancia_total, coordenadas_camiones)
 coor_final = encuentraMinimo(distancia_total, coordenadas_camiones)
 xf = np.zeros(num_camiones)
 yf = np.zeros(num_camiones)
+xf_2 = np.zeros(num_camiones)
+yf_2 = np.zeros(num_camiones)
 
 for i in range(num_camiones):
     xf[i] = coor_final[i]
     yf[i] = coor_final[i + num_camiones]
 
-plt.plot(ca_x, ca_y, 'o', color='black')
-plt.plot(c_x, c_y, 'o', color='blue')
-plt.plot(xf, yf, 'o', color='red')
+for i in range(num_camiones):
+    xf_2[i] = coor_final_2[i]
+    yf_2[i] = coor_final_2[i + num_camiones]
+
+tiempo = - start_time + time.time()
+
+print("El código tardó %3.2f segundos" % (tiempo))
+
+plt.plot(ca_x, ca_y, 'o', color = 'black')
+plt.plot(c_x, c_y, 'o', color = 'blue')
+plt.plot(xf, yf, 'o', color = 'red')
+plt.plot(xf_2, yf_2, 'x', color = 'green')
+
 plt.show()
