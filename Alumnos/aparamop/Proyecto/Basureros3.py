@@ -44,7 +44,7 @@ def dist_casa_camion(casa_x, casa_y, camiones_coord):
 
     n = len(camiones_coord)
     k = int(n/2)
-    aux = 9999999999999999999999
+    aux = 999999
 
     for i in range(k):
         dist = np.sqrt((casa_x - camiones_coord[i-1])**2 + (casa_y - camiones_coord[i-1+k])**2)
