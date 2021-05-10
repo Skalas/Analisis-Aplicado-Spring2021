@@ -1,19 +1,19 @@
 import numpy as np
-import pandas as pd
+#import pandas as pd
 
 # Posición de las casas
 '''
 data = pd.read_csv('localidad.csv')
 data.head()
 df=pd.DataFrame(data)
-d_x = df[df.columns[1]] # latitud (eje x) de las casas
-d_x = d_x.to_numpy()
-d_y = df[df.columns[2]] # longitud (eje y) de las casas
-d_y = d_y.to_numpy()
+ca_x = df[df.columns[1]] # latitud (eje x) de las casas
+ca_x = ca_x.to_numpy()
+ca_y = df[df.columns[2]] # longitud (eje y) de las casas
+ca_y = ca_y.to_numpy()
 '''
 
-d_x = np.random.uniform(0,100,20)
-d_y = np.random.uniform(0,178,20)
+ca_x = np.random.uniform(0,100,20)
+ca_y = np.random.uniform(0,178,20)
 
 
 # Vector inicial con distribución uniforme del número de camiones que queremos
@@ -56,14 +56,14 @@ def distancia_total(casas_x, casas_y, camiones_x, camiones_y):
 def gradiente(f, x0, h=1e-6, i=-1):
 
     m = len(x0)
-    if i in range(n):
-        z = np.zeros(n)
+    if i in range(m):
+        z = np.zeros(m)
         z[i] = h/2
         gradiente = (f(x0 + z) - f(x0 - z))/h
     else:
-        gradiente = np.zeros(n)
-        for j in range(n):
-            z = np.zeros(n)
+        gradiente = np.zeros(m)
+        for j in range(m):
+            z = np.zeros(m)
             z[j] = h/2
             gradiente[j]= (f(x0 + z) - f(x0 - z))/h
     return gradiente
@@ -158,4 +158,6 @@ def max_des(f, x0):
     
     return xk
 
-print(max_des(distancia_total, (d_x,d_y,c_x,c_y)))
+
+
+print(max_des(distancia_total, ))
