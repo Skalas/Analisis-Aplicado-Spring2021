@@ -40,11 +40,11 @@ En este nuevo formato de curso en línea les recomiendo ampliamente que tomen ap
 
 La calificación final está compuesta de la manera siguiente:
 
-|Categoría|Porcentaje|
-|----------|----------|
-|Examen parcial|30%|
-|Examen Final|40%|
-|Proyecto Final|30%|
+| Categoría      | Porcentaje |
+|----------------|------------|
+| Examen parcial | 30%        |
+| Examen Final   | 40%        |
+| Proyecto Final | 30%        |
 
 
 Recuerda que esta clase es de *construir* habilidades. La única manera de construirlas es practicando. 
@@ -53,12 +53,12 @@ Recuerda que esta clase es de *construir* habilidades. La única manera de const
 
 El proyecto se evaluará promediando las siguientes categorías. Se usará la escala recién mostrada en cada una de ellas.
 
-| Categoría | Descripción|
-|----------|--------|
-| Diseño | El proyecto está bien organizado, fácil de seguir y se especifica claramente el problema a resolver.|
-| Documentación| Instrucciones de como ejecutar el código. Nombres de las variables y funciones son descriptivas. Incluye comentarios para que el lector pueda seguir el algoritmo. Se incluyen casos de prueba.|
-|Completez|Todos los elementos del proyecto están incluidos.|
-|Correcto|La lógica del código es correcta y produce resultados con sentido.|
+| Categoría     | Descripción                                                                                                                                                                                     |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Diseño        | El proyecto está bien organizado, fácil de seguir y se especifica claramente el problema a resolver.                                                                                            |
+| Documentación | Instrucciones de como ejecutar el código. Nombres de las variables y funciones son descriptivas. Incluye comentarios para que el lector pueda seguir el algoritmo. Se incluyen casos de prueba. |
+| Completez     | Todos los elementos del proyecto están incluidos.                                                                                                                                               |
+| Correcto      | La lógica del código es correcta y produce resultados con sentido.                                                                                                                              |
 
 
 ## Aclaraciones

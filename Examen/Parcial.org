@@ -3,15 +3,19 @@
 #+OPTIONS: author:nil 
 #+LANGUAGE: es
 
+Dentro de su carpeta personal ~Alumnos/<nombre de usuario>~, generar una nueva carpeta con el nombre de ~Examen~. 
+- Dentro de esta carpeta introducir su código para la parte práctica y un documento que tenga las respuestas a la parte teórica.
+- La duración del examen es de 90 minutos.
+- Y el método de entrega es un Pull Request al repositorio del curso.
+
 * Teoría
 ** ELI5 (20 puntos)
- Explícame como si tuviera 5 años. Es un subreddit muy popular donde se explican conceptos muy interesantes de maneras muy sencillas. Richard Feynman tenía una metodologia de aprendizaje que involucra explicar conceptos complejos a un niño. Por ende para esta parte del examen tenemos lo siguiente:
+Explícame como si tuviera 5 años. Es un subreddit muy popular donde se explican conceptos muy interesantes de maneras muy sencillas. Richard Feynman tenía una metodologia de aprendizaje que involucra explicar conceptos complejos a un niño. Por ende para esta parte del examen tenemos lo siguiente:
  - Explica el algoritmo de búsqueda lineal a un niño de 5 años.
 ** Demostración (20 puntos)
- Si tenemos $f$ una cuadrática convexa $f(x)=\dfrac{1}{2}x^TQx-b^Tx$. Demuestra que el minimizador de una dimensión sobre la linea $x_k + \alpha p_k$ es: 
+Si tenemos $f$ una cuadrática convexa $f(x)=\dfrac{1}{2}x^TQx-b^Tx$. Demuestra que el minimizador de una dimensión sobre la linea $x_k + \alpha p_k$ es: 
  $$ \alpha_k = -\dfrac{\nabla f_k^Tp_k}{p_k^TQp_k}$$
 * Code (60 puntos)
-
 La función de [[https://en.wikipedia.org/wiki/Rosenbrock_function][Rosenbrok]] es una función que se usa bastante para poder probar algoritmos de optimización. Lo que tienen que hacer es : 
 - Implementar la función de costo para poderla optimizar.
 - Usar el algoritmo de Newton para intentar optimizarla.
