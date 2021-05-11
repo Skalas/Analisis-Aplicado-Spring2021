@@ -1,8 +1,8 @@
 # MAT 24430 Analisis-aplicado
+
 Repositorio para la clase de Análisis Aplicado.
-Hola alumnos 
 
-
+Bienvenidos!!!
 ## Antes de empezar
 
 1. Instalar `git` 
@@ -104,6 +104,5 @@ El proyecto se evaluará promediando las siguientes categorías. Se usará la es
 - [Libro de git](http://git-scm.com/book)
 - [Think python](http://www.greenteapress.com/thinkpython/) 
 - [Numerical Optimization](https://www.csie.ntu.edu.tw/~r97002/temp/num_optimization.pdf) 
-
 
 *Documento adaptado de materiales del Dr. Adolfo de Unanue Tiscareño.*
