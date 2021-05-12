@@ -25,6 +25,7 @@ Se hará una presentación a final del semestre al estilo poster de conferencia,
 * Equipos
 Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
 
+
 |--------+------------------------------------+----------------------------------|
 | Equipo | Temática                           | Integrantes                      |
 |--------+------------------------------------+----------------------------------|
@@ -49,4 +50,10 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |        |                                    | Antonio Paramo,  171786 |
 |        |                                    | Fernando Pelaez, 173122 |
 |        |                                    | Juan P Alvares,  165815 |
+
+|--------+------------------------------------+-------------------------|
+|      2 | Finite Element Method              | Carolina Elorza, 166780 |
+|        |                                    | Jesus Solorzano, 163029 |
+|        |                                    | Ana C. Sandoval, 152808 |
+|        |                                    | Mario E. Sosa L, 151767 |
 |--------+------------------------------------+-------------------------|
