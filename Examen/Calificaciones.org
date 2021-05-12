@@ -1,0 +1,90 @@
+* Calificaciones primer parcial 
+#+name: calificaciones
+|--------+----+----+----+----+-------|
+|   C.U. | P1 | P2 | P3 | P4 | Final |
+|--------+----+----+----+----+-------|
+| 131008 | 20 | 15 | 55 | 10 |   100 |
+| 151135 | 20 | 15 |  0 |  0 |    35 |
+| 151767 | 15 | 20 | 50 |  0 |    85 |
+| 152808 | 20 | 20 | 30 |  0 |    70 |
+| 157045 | 20 | 15 | 20 | 10 |    65 |
+| 163029 | 20 | 20 | 60 |  0 |   100 |
+| 164181 | 20 | 20 | 40 |  0 |    80 |
+| 165186 |  0 |  0 |  0 |  0 |     0 |
+| 165815 |  5 | 20 | 10 |  0 |    35 |
+| 165860 | 20 | 20 | 10 |  0 |    50 |
+| 166088 | 15 | 20 | 20 |  0 |    55 |
+| 166780 | 20 | 20 | 60 |  0 |   100 |
+| 170309 | 20 | 15 | 50 |  0 |    85 |
+| 170454 | 20 | 20 | 50 |  0 |    90 |
+| 171786 | 10 | 20 | 55 |  0 |    85 |
+| 171886 | 20 | 20 | 60 |  0 |   100 |
+| 172255 | 20 | 20 | 60 | 10 |   100 |
+| 173122 | 10 | 10 | 50 |  0 |    70 |
+| 173144 | 20 | 20 | 25 |  0 |    65 |
+| 173993 | 20 | 20 | 45 |  0 |    85 |
+| 174052 | 20 | 20 | 30 |  0 |    70 |
+| 174064 | 20 | 20 | 40 |  0 |    80 |
+| 174139 | 10 | 20 | 50 |  0 |    80 |
+| 174308 | 20 | 20 | 60 | 10 |   100 |
+| 175311 | 20 | 20 | 50 | 10 |   100 |
+| 175551 | 20 | 20 | 20 |  0 |    60 |
+| 176357 | 10 | 10 | 20 |    |    40 |
+| 181158 | 20 | 15 | 60 | 10 |   100 |
+#+TBLFM: $6=vmin(vsum($2..$5), 100)
+
+#+name: calificaciones-csv
+#+BEGIN_SRC elisp :var x=calificaciones :wrap example :file export.csv :results file
+(orgtbl-to-csv x nil)
+#+END_SRC
+
+#+RESULTS: calificaciones-csv
+#+begin_example
+[[file:export.csv]]
+#+end_example
+
+#+begin_src R :session
+library(tidyverse)
+
+data  <- read_csv('export.csv')
+
+data %>%
+    summarise(
+        media = mean(Final),
+        sd = sd(Final)
+    )
+
+#+end_src
+
+#+RESULTS:
+| 73.75 | 25.2625106520402 |
+
+#+begin_src R  :session
+data %>%
+    select(Final) %>%
+    ggplot(aes(Final))+
+    geom_histogram(bins=15)
+#+end_src
+
+#+RESULTS:
+
+#+begin_src R  :session
+data %>%
+    select(P1) %>%
+    ggplot(aes(P1))+
+    geom_histogram(bins=10)
+#+end_src
+
+#+RESULTS:
+
+#+begin_src R  :session
+data %>%
+    select(P4) %>%
+    ggplot(aes(P4))+
+    geom_histogram(bins=10)
+
+#+end_src
+
+#+RESULTS:
+
+#+RESULTS:
