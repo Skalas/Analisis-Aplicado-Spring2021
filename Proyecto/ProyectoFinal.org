@@ -31,6 +31,7 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |      1 | Optimizando el desempeño académico | Alonso Martinez, 172255          |
 |        |                                    | Julieta Rivero, 170454           |
 |        |                                    | Rebeca Angulo, 175311            |
+|        |                                    | Jose Pablo Sánchez, 174139|
 |--------+------------------------------------+----------------------------------|
 |      2 | Ubicación de policías/alumbrado    | María de la Luz Vizcaíno, 157045 |
 |        | público en la CDMX                 | Sebastián Martínez, 176357       |
@@ -44,8 +45,4 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |        |                                    | Integrante 4, 000110022          |
 |        |                                    | Integrante 5, 000110022          |
 |--------+------------------------------------+----------------------------------|  
-|                                             | Integrante 2, 000110022 |
-|        |                                    | Integrante 3, 000110022 |
-|        |                                    | Integrante 4, 000110022 |
-|        |                                    | Integrante 5, 000110022 |
-|--------+------------------------------------+-------------------------|
+
