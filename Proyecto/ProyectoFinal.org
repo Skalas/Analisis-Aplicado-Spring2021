@@ -39,16 +39,14 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |        |                                    | Carlos Iván León Coras, 131008   |
 |        |                                    | Jose Hurtado, 164181             |
 |--------+------------------------------------+----------------------------------|
-|      3 | Otro Nuevo Tema                    | Integrante 1, 000110022          |
-|        |                                    | Integrante 2, 000110022          |
-|        |                                    | Integrante 3, 000110022          |
-|        |                                    | Integrante 4, 000110022          |
-|        |                                    | Integrante 5, 000110022          |
+|      3 | Optimización en economía           | Maya Denti, 181158      |
+|        |                                    | Jose Alfredi Issa,173144|
+|        |                                    | Santiago Alavarez,171886|
+|        |                                    | Daniela Bugeda, 174308  |
+|        |                                    | David López,            |
 |--------+------------------------------------+----------------------------------|  
 |      4 | Optimizar red de camiones de basura| Arturo Gonzales, 151135 |
 |        |                                    | Antonio Paramo,  171786 |
 |        |                                    | Fernando Pelaez, 173122 |
 |        |                                    | Juan P Alvares,  165815 |
 |--------+------------------------------------+-------------------------|
-
-
