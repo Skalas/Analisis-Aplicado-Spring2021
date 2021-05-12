@@ -5,7 +5,7 @@ import time
 
 start_time = time.time()
 
-num_casas = 100
+num_casas = 500
 num_camiones = 5
 
 ca_x = np.random.uniform(0, 100, num_casas)
