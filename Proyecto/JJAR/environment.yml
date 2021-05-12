@@ -1,0 +1,11 @@
+name: AnAp
+channels:
+  - conda-forge
+dependencies:
+  - seaborn
+  - jupyter
+  - pre-commit
+  - pytest
+  - black
+  - icecream
+  - numdifftools
