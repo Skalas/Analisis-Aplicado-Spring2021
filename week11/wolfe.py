@@ -28,7 +28,6 @@ def genera_alpha(f, x0, pk, c1=1e-4, c2 = 0.5, tol=1e-5):
     Gkpk = Grad(f, x0).dot(pk)
     while f(x0 + alpha*pk) > f(x0) + c1*alpha*Gkpk:
         alpha *= rho
-        Gkpk = Grad(f, x0).dot(pk)
     return alpha
 
 
