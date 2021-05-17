@@ -1,0 +1,46 @@
+#+OPTIONS: toc:nil
+#+TITLE: Examen Final
+#+OPTIONS: author:nil
+#+LANGUAGE: es
+
+
+Dentro de su carpeta personal ~Alumnos/<nombre de usuario>~, generar una nueva carpeta con el nombre de ~ExamenFinal~.
+- Dentro de esta carpeta introducir su código para la parte práctica y un documento que tenga las respuestas a la parte teórica.
+- La duración del examen es de 2 horas y 45 minutos.
+- Y el método de entrega es un Pull Request al repositorio del curso.
+
+* Teoría (40pts)
+
+** Gradiente Conjugado
+ - Demuestre que si los vectores no nulos \(p_1, p_2,...,p_l\)  satisfacen que :
+    $$p_i^TAp_j=0, \forall i\neq j, $$ y A es simétrica y positiva definida, entonces los vectores son linealmente independientes.
+ - Dado este resultado, ¿Por qué el gradiente conjugado converge en a lo más $n$ iteraciones?.
+
+** BFGS
+- Verifique que \(B_{k+1}\) y \(H_{k+1}\) son inversas una de la otra.
+
+* Code (60 puntos)
+
+Los algoritmos que se piden correr a continuación tienen que ser propios (con excepción de los que de hecho hicimos en clase). Lo hecho en clase y modificaciones a los mismos es lo que se espera. No se espera que usen las funciones de optimización de scipy.
+
+** DFP (20 puntos)
+Corre el Algoritmo BFGS, pero con la actualización DFP con la función cuadrados en dimensión 10 con punto inicial:
+#+begin_src python :eval nil
+  x0 = [(-1)**i*10 for i in range(10) ]
+#+end_src
+
+** Gradiente Conjugado (40 puntos)
+Con *TU* clave única como semilla, genera una matriz diagonal con 10^6 números aleatorios en la diagonal, después de esto, genera un vector del mismo tamaño. I.e.
+#+begin_src python :eval nil
+    import random
+    random.seed(108683) #  Cambien a su propia clave
+    Diag_A = [random.randint(1,1000) for x in range(1000000)]
+    b = [random.randint(1,1000) for x in range(1000000)]
+#+end_src
+
+Ahora resuelve el sistema lineal $Ax=b$ con el algoritmo de Gradiente Conjugado.
+
++ *NOTAS*:
+  + No intentes generar la matriz completa , ya que se requieren 7.28 [[https://es.wikipedia.org/wiki/Tebibyte][TiB]] de memoria para almacenarlo.
+  + La matriz tiene 10^{12} entradas, pero sólo 10^{6} de ellas son distintas de cero :).
+  + Sólo se puede usar una implementación propia de matriz rala.
