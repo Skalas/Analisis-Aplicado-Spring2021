@@ -1,6 +1,7 @@
 import numpy as np
 import numpy.linalg as la
 
+# Quiero ver división por cero porque indicaría error
 np.seterr('raise')
 
 def DFP_Bk(yk, sk, Bk):
@@ -36,14 +37,13 @@ def DFP_Hk(yk, sk, Hk):
     sk = np.reshape(sk, (len(sk), 1))
     yk = np.reshape(yk, (len(yk), 1))
 
-    print(sk.shape)
 
     # Hk1 = Hk - (Hk * yk * yk.T * Hk)/(yk.T * Hk * yk) + (sk * sk.T)/(yk.T * sk)
 
     # Nota: multi_dot existe para no hacer esto pero bueno
     # Hk1 = Hk - (np.dot(Hk, np.dot(yk, np.dot(yk.T, Hk))))
     sum1 = la.multi_dot([Hk, yk, yk.T, Hk])
-    div1 = (np.dot(yk.T, np.dot(Hk, yk)))
+    div1 = la.multi_dot([yk.T, Hk, yk])
     sum2 = np.dot(sk, sk.T)
     div2 = np.dot(yk.T, sk)
     Hk1 = Hk - (sum1/div1) + (sum2/div2)
