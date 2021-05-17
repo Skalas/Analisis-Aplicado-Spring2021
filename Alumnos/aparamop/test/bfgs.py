@@ -2,6 +2,7 @@ import numpy as np
 from numpy import linalg as LA
 
 
+
 def DFP_Hk(yk, sk, Hk):
     """
     Función que calcula La actualización DFP de la matriz Hk
@@ -12,7 +13,7 @@ def DFP_Hk(yk, sk, Hk):
     Out:
       Hk+1: Matriz nxn
     """
-    Hk1 = Hk - (Hk * yk * yk.T * Hk)/(yk.T * Hk * yk) + (sk * sk.T)/(yk.T * sk)
+    Hk1 = Hk - (np.dot(Hk, np.dot(yk, np.dot(yk, Hk)))) / (np.dot(yk, np.dot(Hk, yk))) + np.dot(sk, sk) / np.dot(yk, sk)
     return Hk1
 
 
@@ -126,9 +127,6 @@ def cuadrados(x):
     return resultado
 
 
-def rosenbrock(x, a=1, b=100):
-    return (a-x[0])**2 + b * (x[1] - x[1]**2)**2
-
 
 def BFGS(f, x0, tol, H0, maxiter=10000):
     k = 0
@@ -150,9 +148,33 @@ def BFGS(f, x0, tol, H0, maxiter=10000):
         Gk = Gk1
     return xk1, k
 
+def DFP(f, x0, tol, H0, maxiter=10000):
+    k = 0
+    Gk = Grad(f, x0)
+    Hk = H0
+    xk = np.array(x0)
+    xk1 = np.array(x0)
+    sk = np.array(100)
+    while (LA.norm(Gk) > tol and LA.norm(sk) > tol and k <= maxiter):
+        pk = - Hk.dot(Gk)
+        alphak = genera_alpha(f, xk, pk)
+        xk1 = xk + alphak * pk
+        sk = xk1 - xk
+        Gk1 = Grad(f, xk1)
+        yk = Gk1 - Gk
+        Hk = DFP_Hk(yk, sk, Hk)
+        k += 1
+        xk = xk1
+        Gk = Gk1
+    return xk1, k
+
+
+
+
 
 if __name__ == "__main__":
-    x, k = BFGS(rosenbrock, np.array([-100000, 1]), 1e-15, np.eye(2))
-    print(f'Llegué a {x} en {k} iteraciones')
-    x, k = BFGS(cuadrados, np.array([-10, 10, 20, 100]), 1e-15, np.eye(4))
+    x0 = np.zeros(10)
+    for i in range(10):
+        x0[i]=(-1)**i*10
+    x, k = DFP(cuadrados, x0, 1e-15, np.eye(10))
     print(f'Llegué a {x} en {k} iteraciones')
