@@ -28,8 +28,8 @@ def DFP_Hk(yk, sk, Hk):
     Out:
       Hk+1: Matriz nxn
     """
-    Hk1 = Hk - (Hk * yk * yk.T * Hk)/(yk.T * Hk * yk) + (sk * sk.T)/(yk.T * sk)
-    return Hk1
+    # Ojo que esto tiene un error Hk1 = Hk - (Hk * yk * yk.T * Hk)/(yk.T * Hk * yk) + (sk * sk.T)/(yk.T * sk)
+    return Hk
 
 
 def BFGS_Hk(yk, sk, Hk):
