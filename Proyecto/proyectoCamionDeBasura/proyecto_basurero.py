@@ -6,7 +6,7 @@ import time
 start_time = time.time()
 
 num_casas = 100
-num_camiones = 2
+num_camiones = 3
 
 ca_x = np.random.uniform(0, 100, num_casas)
 ca_y = np.random.uniform(0, 178, num_casas)
