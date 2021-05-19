@@ -76,6 +76,7 @@ data %>%
 #+end_src
 
 #+RESULTS:
+
 [[file:p2.1.png]]
 
 #+begin_src R  :session  :file p2.2.png :results graphics file
@@ -87,4 +88,5 @@ data %>%
 #+end_src
 
 #+RESULTS:
+
 [[file:density.png]]
