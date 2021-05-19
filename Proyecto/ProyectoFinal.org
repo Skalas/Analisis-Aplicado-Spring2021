@@ -44,7 +44,7 @@ Favor de introducir, en el formato que está aquí, los integrantes y las temát
 |        |                                    | Jose Alfredi Issa,173144|
 |        |                                    | Santiago Alavarez,171886|
 |        |                                    | Daniela Bugeda, 174308  |
-|        |                                    | David López,            |
+|        |                                    | David López, 173993     |
 |--------+------------------------------------+----------------------------------|  
 |      4 | Optimizar red de camiones de basura| Arturo Gonzales, 151135 |
 |        |                                    | Antonio Paramo,  171786 |
