@@ -65,7 +65,7 @@ data %>%
 #+end_src
 
 #+RESULTS:
-[[file:Final.png]]
+[[file:./Final.png][Final]]
 
 #+begin_src R  :session  :file p2.1.png :results graphics file
 data %>%
