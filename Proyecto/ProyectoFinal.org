@@ -24,37 +24,73 @@ Se hará una presentación a final del semestre al estilo poster de conferencia,
 - Fecha de /Show and Tell/ : *2021-05-12*
 * Equipos
 Favor de introducir, en el formato que está aquí, los integrantes y las temáticas que van a tocar
+|--------+---------------------------------------+--------------------------+--------|
+| Equipo | Temática                              | Integrantes              |        |
+|--------+---------------------------------------+--------------------------+--------|
+|      1 | Optimizando el desempeño académico    | Alonso Martinez          | 172255 |
+|        |                                       | Julieta Rivero           | 170454 |
+|        |                                       | Rebeca Angulo            | 175311 |
+|        |                                       | Jose Pablo Sánchez       | 174139 |
+|--------+---------------------------------------+--------------------------+--------|
+|      2 | Seguridad CDMX                        | María de la Luz Vizcaíno | 157045 |
+|        |                                       | Sebastián Martínez       | 176357 |
+|        |                                       | Álvaro Acedo             | 174052 |
+|        |                                       | Carlos Iván León Coras   | 131008 |
+|        |                                       | Jose Hurtado             | 164181 |
+|--------+---------------------------------------+--------------------------+--------|
+|      3 | Optimización en economía              | Maya Denti               | 181158 |
+|        |                                       | Jose Alfredi Issa        | 173144 |
+|        |                                       | Santiago Alavarez        | 171886 |
+|        |                                       | Daniela Bugeda           | 174308 |
+|        |                                       | David López              | 173993 |
+|--------+---------------------------------------+--------------------------+--------|
+|      4 | Optimizar red de camiones de basura   | Arturo Gonzales          | 151135 |
+|        |                                       | Antonio Paramo           | 171786 |
+|        |                                       | Fernando Pelaez          | 173122 |
+|        |                                       | Juan P Alvares           | 165815 |
+|--------+---------------------------------------+--------------------------+--------|
+|      5 | Finite Element Method                 | Carolina Elorza          | 166780 |
+|        |                                       | Jesus Solorzano          | 163029 |
+|        |                                       | Ana C. Sandoval          | 152808 |
+|        |                                       | Mario E. Sosa L          | 151767 |
+|--------+---------------------------------------+--------------------------+--------|
+|      6 | Log-Reg w/Stochastic Gradient Descent | Santiago Villarreal      | 174064 |
+|        |                                       | Luis Carlos Bernal       | 165860 |
+|        |                                       | Armando Appelaniz        | 166088 |
+|        |                                       | Adrián Rodríguez         | 175551 |
+|        |                                       | Emiliano Ramírez         | 170309 |
+|--------+---------------------------------------+--------------------------+--------|
 
-
-
-|--------+----------------------------------------------------+----------------------------------|
-| Equipo | Temática                                           | Integrantes                      |
-|--------+----------------------------------------------------+----------------------------------|
-|      1 | Optimizando el desempeño académico                 | Alonso Martinez, 172255          |
-|        |                                                    | Julieta Rivero, 170454           |
-|        |                                                    | Rebeca Angulo, 175311            |
-|        |                                                    | Jose Pablo Sánchez, 174139       |
-|--------+----------------------------------------------------+----------------------------------|
-|      2 | Ubicación de policías/alumbrado público en la CDMX | María de la Luz Vizcaíno, 157045 |
-|        |                                                    | Sebastián Martínez, 176357       |
-|        |                                                    | Álvaro Acedo, 174052             |
-|        |                                                    | Carlos Iván León Coras, 131008   |
-|        |                                                    | Jose Hurtado, 164181             |
-|--------+----------------------------------------------------+----------------------------------|
-|      3 | Optimización en economía                           | Maya Denti, 181158               |
-|        |                                                    | Jose Alfredi Issa,173144         |
-|        |                                                    | Santiago Alavarez,171886         |
-|        |                                                    | Daniela Bugeda, 174308           |
-|        |                                                    | David López, 17399 3             |
-|--------+----------------------------------------------------+----------------------------------|
-|      4 | Optimizar red de camiones de basura                | Arturo Gonzales, 151135          |
-|        |                                                    | Antonio Paramo,  171786          |
-|        |                                                    | Fernando Pelaez, 173122          |
-|        |                                                    | Juan P Alvares,  165815          |
-|        |                                                    |                                  |
-|--------+----------------------------------------------------+----------------------------------|
-|      5 | Finite Element Method                              | Carolina Elorza, 166780          |
-|        |                                                    | Jesus Solorzano, 163029          |
-|        |                                                    | Ana C. Sandoval, 152808          |
-|        |                                                    | Mario E. Sosa L, 151767          |
-|--------+----------------------------------------------------+----------------------------------|
+* Calificaciones Proyecto Final
+#+name: calificaciones
+|--------+--------+--------------+---------------+-------|
+|   C.U. | Equipo | Calificación | Multiplicador | Final |
+|--------+--------+--------------+---------------+-------|
+| 172255 |      1 |            9 |            10 |     9 |
+| 170454 |      1 |            9 |             9 |   8.1 |
+| 175311 |      1 |            9 |             9 |   8.1 |
+| 174139 |      1 |            9 |             8 |   7.2 |
+| 157045 |      2 |            9 |            10 |     9 |
+| 176357 |      2 |            9 |            10 |     9 |
+| 174052 |      2 |            9 |            10 |     9 |
+| 131008 |      2 |            9 |            10 |     9 |
+| 164181 |      2 |            9 |            10 |     9 |
+| 181158 |      3 |           10 |            10 |    10 |
+| 173144 |      3 |           10 |            10 |    10 |
+| 171886 |      3 |           10 |            10 |    10 |
+| 174308 |      3 |           10 |            10 |    10 |
+| 173993 |      3 |           10 |            10 |    10 |
+| 166780 |      5 |            8 |            10 |     8 |
+| 163029 |      5 |            8 |            10 |     8 |
+| 152808 |      5 |            8 |             8 |   6.4 |
+| 151767 |      5 |            8 |             9 |   7.2 |
+| 151135 |      4 |            9 |             9 |   8.1 |
+| 171786 |      4 |            9 |            10 |     9 |
+| 173122 |      4 |            9 |            10 |     9 |
+| 165815 |      4 |            9 |             9 |   8.1 |
+| 174064 |      6 |           10 |            10 |    10 |
+| 165860 |      6 |           10 |            10 |    10 |
+| 166088 |      6 |           10 |            10 |    10 |
+| 175551 |      6 |           10 |            10 |    10 |
+| 170309 |      6 |           10 |            10 |    10 |
+#+TBLFM: $5=($3*$4/10)

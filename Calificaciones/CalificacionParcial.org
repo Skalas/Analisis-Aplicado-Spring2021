@@ -40,7 +40,7 @@
 
 #+RESULTS: calificaciones-csv
 #+begin_example
-[[file:export.csv]]
+[[file:parcial.csv]]
 #+end_example
 
 #+begin_src R :session

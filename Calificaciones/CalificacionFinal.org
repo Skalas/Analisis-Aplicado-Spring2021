@@ -33,39 +33,75 @@
 #+TBLFM: $6=vmin(vsum($2..$5), 100)
 
 #+name: calificaciones-csv
-#+BEGIN_SRC elisp :var x=calificaciones :wrap example :file export.csv :results file
+#+BEGIN_SRC elisp :var x=calificaciones :wrap example :file ExamenFinal.csv :results file
 (orgtbl-to-csv x nil)
 #+END_SRC
 
 #+RESULTS: calificaciones-csv
 #+begin_example
-[[file:export.csv]]
+[[file:ExamenFinal.csv]]
 #+end_example
 
 #+begin_src R :session
-library(tidyverse)
+  library(tidyverse)
+  library(knitr)
+  EF  <- read_csv('ExamenFinal.csv')
+  Proy  <- read_csv('proyecto.csv')
+  EP <-read_csv('parcial.csv')
 
-data  <- read_csv('export.csv')
+  data <- left_join(EF,EP, by='C.U.', suffix=c('_EF', '_EP')) %>%
+    left_join(Proy, by='C.U.') %>%
+    select('C.U.',starts_with('Final')) %>%
+    mutate(CalificacionFinal=Final_EF*0.4+Final_EP*0.3+Final*0.3) %>%
+    rename(Examen_Parcial=Final_EP,Examen_Final=Final_EP, Proyecto_Final=Final)
+#+end_src
 
- data %>%
-    summarise(
-        media = mean(Final),
-        sd = sd(Final)
-    )
-
+#+begin_src R :session :results
+kable(data)
 #+end_src
 
 #+RESULTS:
+#+begin_example
 
 
-|            Media |               SD |
-| 73.3333333333333 | 14.2099640014701 |
+|   C.U.| Final_EF| Examen_Final| Proyecto_Final| CalificacionFinal|
+|------:|--------:|------------:|--------------:|-----------------:|
+| 131008|       95|          100|             90|              95.0|
+| 151135|       40|           35|             81|              50.8|
+| 151767|       60|           85|             72|              71.1|
+| 152808|       50|           70|             64|              60.2|
+| 157045|       65|           65|             90|              72.5|
+| 163029|       90|          100|             80|              90.0|
+| 165815|       65|           35|             81|              60.8|
+| 165860|       60|           50|            100|              69.0|
+| 166088|       75|           55|            100|              76.5|
+| 166780|       75|          100|             80|              84.0|
+| 170309|       90|           85|            100|              91.5|
+| 170454|       95|           90|             81|              89.3|
+| 171786|       65|           85|             90|              78.5|
+| 171886|       75|          100|            100|              90.0|
+| 172255|       65|          100|             90|              83.0|
+| 173122|       85|           70|             90|              82.0|
+| 173144|       50|           65|            100|              69.5|
+| 173993|       75|           85|            100|              85.5|
+| 174052|       85|           70|             90|              82.0|
+| 174064|       90|           80|            100|              90.0|
+| 174139|       75|           80|             72|              75.6|
+| 174308|       75|          100|            100|              90.0|
+| 175311|       85|          100|             81|              88.3|
+| 175551|       70|           60|            100|              76.0|
+| 176357|       65|           40|             90|              65.0|
+| 181158|       75|          100|            100|              90.0|
+| 164181|       85|           80|             90|              85.0|
+Skls-
+#+end_example
+
 
 #+begin_src R  :session  :file Final.png :results graphics file
-data %>%
-    select(Final) %>%
-    ggplot(aes(Final))+
-    geom_histogram(bins=5)
+  data %>%
+      select(Final) %>%
+      ggplot(aes(Final))+
+      geom_histogram(bins=5)
 #+end_src
 
 #+RESULTS:
