@@ -55,6 +55,8 @@ data  <- read_csv('export.csv')
 #+end_src
 
 #+RESULTS:
+
+|            Media |               SD |
 | 72.8846153846154 | 14.2949695293888 |
 
 #+begin_src R  :session  :file Final.png :results graphics file
