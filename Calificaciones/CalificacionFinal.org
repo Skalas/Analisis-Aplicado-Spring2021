@@ -60,11 +60,6 @@
 kable(data)
 #+end_src
 
-#+RESULTS:
-
-
-#+begin_example
-
 
 |   C.U.| Final_EF| Examen_Final| Proyecto_Final| CalificacionFinal|
 |------:|--------:|------------:|--------------:|-----------------:|
@@ -95,9 +90,6 @@ kable(data)
 | 176357|       65|           40|             90|              65.0|
 | 181158|       75|          100|            100|              90.0|
 | 164181|       85|           80|             90|              85.0|
-Skls-
-#+end_example
-
 
 #+begin_src R  :session  :file Final.png :results graphics file
   data %>%
