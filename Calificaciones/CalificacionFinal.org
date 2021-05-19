@@ -29,6 +29,7 @@
 | 175551 |   20 |   20 |   15 |   15 |    70 |
 | 176357 |   20 |   20 |   10 |   15 |    65 |
 | 181158 |   20 |   20 |   20 |   15 |    75 |
+| 164181 |   20 |   20 |   10 |   35 |    85 |
 #+TBLFM: $6=vmin(vsum($2..$5), 100)
 
 #+name: calificaciones-csv
@@ -56,8 +57,9 @@ data  <- read_csv('export.csv')
 
 #+RESULTS:
 
+
 |            Media |               SD |
-| 72.8846153846154 | 14.2949695293888 |
+| 73.3333333333333 | 14.2099640014701 |
 
 #+begin_src R  :session  :file Final.png :results graphics file
 data %>%
@@ -67,6 +69,7 @@ data %>%
 #+end_src
 
 #+RESULTS:
+[[file:Final.png]]
 
 [[file:./Final.png]]
 
@@ -78,6 +81,7 @@ data %>%
 #+end_src
 
 #+RESULTS:
+[[file:p2.1.png]]
 
 [[file:p2.1.png]]
 
@@ -90,5 +94,6 @@ data %>%
 #+end_src
 
 #+RESULTS:
+[[file:p2.2.png]]
 
 [[file:density.png]]
