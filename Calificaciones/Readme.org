@@ -1,3 +1,5 @@
+* Calificaciones Finales Análisis Aplicado Primavera 2021
+
 #+begin_src R :session
   library(tidyverse)
   library(knitr)
@@ -25,6 +27,7 @@ kable(data)
 | 152808 |       50 |           70 |             64 |                 6 |
 | 157045 |       65 |           65 |             90 |                 7 |
 | 163029 |       90 |          100 |             80 |                 9 |
+| 164181 |       85 |           80 |             90 |                 8 |
 | 165815 |       65 |           35 |             81 |                 6 |
 | 165860 |       60 |           50 |            100 |                 7 |
 | 166088 |       75 |           55 |            100 |                 8 |
@@ -45,7 +48,6 @@ kable(data)
 | 175551 |       70 |           60 |            100 |                 8 |
 | 176357 |       65 |           40 |             90 |                 6 |
 | 181158 |       75 |          100 |            100 |                 9 |
-| 164181 |       85 |           80 |             90 |                 8 |
 
 #+begin_src R :session :file CalifFinal.png :results graphics file
   data %>%
